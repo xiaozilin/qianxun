@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-1.11.1.js"></script>
+        <script>
+        		$(function(){
+            var a=0;
+            var timer;
+            function aa(){
+                clearInterval(timer)
+                timer=setInterval(function(){
+                    a=a+1
+                    if(a>3){
+                        a=0;
+                        $('.lunbo').children('ul').css('left','0');
+                        a=1;
+                    }
+                    $('.lunbo').children('ul').css('left', -780*a+'px');
+                },1000)
+            }
+            aa()
+            $('.lunbo').hover(function() {
+                clearInterval(timer);
+            }, function() {
+                aa();
+            });
+            $('.lunbol').click(function(event) {
+                a=a+1
+                if(a>3){
+                    a=0 
+                }
+                $('.lunbo').children('ul').css('left', -780*a+'px');
+            });
+            $('.lunbor').click(function(event) {
+                a=a-1
+                if(a<0)
+                {
+                    a=3
+                }
+                $('.lunbo').children('ul').css('left', -780*a+'px');
+            });
+        })
+        </script>
+    </head>
+    <body style="background: #eee;">
+    <div class="nav">
+    		<div class="container">
+    			<a href="#" class="logo">
+    				<img src="images/logo11.png" alt="">
+    			</a>
+                <ul class="nav-side">
+                    <li class="nav-item">
+                        <a href="#" class="link" target="_blank">建议反馈</a>
+                    </li>
+                </ul>
+                <ul id="nave">
+                    <li class="i1"><a href="tequan.html">兑换特权</a></li>
+                    <li><a href="myji.html">我的积分</a></li>
+                    <li><a href="rule.html">积分规则</a></li>
+                </ul>
+    		</div>
+    	</div>
+    	<div class="bod">
+    		<div class="pk">
+    			<div class="qiandao">
+    				<div class="zhong">
+    					<p>登录签到</p>
+    					</div>
+    					<h6>赚积分换特权<br>连续签到<span>3</span>天还能抽大奖！</h6>
+    			</div>
+    			<div class="lunbo">
+    			<ul>
+    				<li><img src="images/banner01.png" alt=""></li>
+    				<li><img src="images/banner02.png" alt=""></li>
+    				<li><img src="images/banner03.jpg" alt=""></li>
+    				<li><img src="images/banner04.jpg" alt=""></li>
+    			</ul>
+    				<div class="lunbol"></div>
+    				<div class="lunbor"></div>
+    			</div>
+    			</div>
+    		<div class="pptv">
+    				<div class="hotter"></div>
+    				<a href="#">了解更多</a>
+    				<div class="pptvl">
+    					<img src="images/pptv.png" alt=""><span>PPTV聚力会员激活码</span>
+    				</div>
+    				<div class="pptvr">
+    					<div class="pptvt">
+    						<img src="images/pptv7.png" alt="">
+    						<span class="jishu">500</span>
+    						<span class="jish">积分</span>
+    					</div>
+    					<div class="pptvy">
+    						<img src="images/pptvm.png" alt="">
+    						<span class="jishu">1500</span>
+    						<span class="jish">积分</span>
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="pptv">
+    				<a href="#">了解更多</a>
+    				<div class="iqiyi">
+    					<img src="images/iqy.png" alt=""><span>爱奇艺VIP激活码</span>
+    				</div>
+    				<div class="pptvr">
+    					<div class="pptvt">
+    						<img src="images/iqyday.png" alt="">
+    						<span class="jishu">500</span>
+    						<span class="jish">积分</span>
+    					</div>
+    					<div class="pptvy">
+    						<img src="images/iqymonth.png" alt="">
+    						<span class="jishu">10000</span>
+    						<span class="jish">积分</span>
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="pptv">
+    				<a href="#">了解更多</a>
+    				<div class="baidu">
+    					<img src="images/bdc.png" alt=""><span>百度云会员激活码</span>
+    				</div>
+    				<div class="pptvr">
+    					<div class="pptvt">
+    						<img src="images/bdyone.png" alt="">
+    						<span class="jishu">4000</span>
+    						<span class="jish">积分</span>
+    					</div>
+    					
+    				</div>
+    			</div>
+    			<div class="pptv">
+    				<a href="#">了解更多</a>
+    				<div class="baiduwenku">
+    					<img src="images/txt.png" alt=""><span>百度文库VIP激活码</span>
+    				</div>
+    				<div class="pptvr">
+    					<div class="pptvt">
+    						<img src="images/txt_day.png" alt="">
+    						<span class="jishu">800</span>
+    						<span class="jish">积分</span>
+    					</div>
+    					<div class="pptvy">
+    						<img src="images/txt_month.png" alt="">
+    						<span class="jishu">4000</span>
+    						<span class="jish">积分</span>
+    					</div>
+    				</div>
+    			</div>
+    	</div>
+    </body>
+</html>

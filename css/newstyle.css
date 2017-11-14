@@ -1,0 +1,596 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family:"微软雅黑";
+
+}
+html,body,section{
+	width: 100%;
+	height: 100%;
+}
+section>div{
+	width:100%;
+	height:100%;
+}
+section{
+	position: relative;
+	top: 0;
+	left: 0;
+}
+body{
+	overflow: hidden;
+	position: relative;
+}
+.side{
+	position: fixed;
+	top: 50%;
+	margin-top: -200px;
+	right: 30px;
+	z-index: 2;
+}
+.side .current{
+	background:url('../images/side_bg.png') center;
+	background-size: 90%;
+	width: 45px;
+	height: 45px;
+	border: none;
+	margin-left: -6px;
+	animation: circle 3s linear infinite;
+}
+.scloud{
+	position: absolute;
+	top: 200px;
+	animation: bbq 40s linear infinite;
+}
+@keyframes bbq{
+	0%{
+		transform: translate(-500px,0px);
+	}
+	100%{
+		transform: translate(2000px,0px);
+	}
+}
+.cloud{
+	position: absolute;
+	top: 0px;
+	animation: bbc 40s linear infinite;
+}
+@keyframes bbc{
+	0%{
+		transform: translate(0px,0px);
+	}
+	100%{
+		transform: translate(2000px,0px);
+	}
+}
+.musicc{
+	position: absolute;
+	z-index: 1;
+	top: 20px;
+	right: 20px;
+	width: 50px;
+}
+.music{
+	width: 50px;
+	animation: circle 3s linear infinite;
+}
+.loading{
+	position:fixed;
+	z-index: 1;
+	top: 350px;
+	left: 520px;
+}
+.fotter{
+	background:#666;
+	position:fixed;
+	width:100%;
+	opacity: 0.7;
+	height:50px;
+	bottom: 0px;
+}
+.fotter ul {
+	width:1000px;
+	margin:0 auto;
+}
+.fotter ul li{
+	float:left;
+	list-style:none;
+	line-height:50px;
+	width: 200px;
+	text-align: center;
+}
+.fotter ul li a{
+	color:#fff;
+}
+.fotter ul li:nth-of-type(1):hover{
+	background: red;
+}
+.fotter ul li:nth-of-type(2):hover{
+	background: yellow;
+}
+.fotter ul li:nth-of-type(3):hover{
+	background: green;
+}
+.fotter ul li:nth-of-type(4):hover{
+	background: skyblue;
+}
+.fotter ul li:nth-of-type(5):hover{
+	background: purple;
+}
+.loading p{
+	color: #fff;
+	font-size: 16px;
+}
+.loading img{
+	margin-bottom: 10px;
+}
+.loading a{
+	cursor: pointer;
+}
+#logo{
+	position: absolute;
+	z-index: 1;
+	top: 20px;
+	left: 20px;
+}
+.ball{
+	position: absolute;
+	top: 50px;
+	left: 600px;
+	animation: qiu 3s linear infinite;
+}
+@keyframes qiu{
+	0%{transform: translate(0px,0px);}
+	50%{transform: translate(0px,-50px);}
+	100%{transform: translate(0px,0px);}
+}
+.pao{
+	position: absolute;
+	top: 200px;
+	left: 715px;
+	animation: p1 3.7s linear infinite;
+}
+@keyframes p1{
+	0%{
+		transform: translate(0px,0px);
+	}
+	100%{
+		transform: translate(0px,-200px);
+	}
+}
+.pao1{
+	position: absolute;
+	top: 200px;
+	left: 615px;
+	animation: p2 5.7s linear infinite;
+}
+@keyframes p2{
+	0%{
+		transform: translate(0px,0px);
+	}
+	100%{
+		transform: translate(0px,-180px);
+	}
+}
+.pao2{
+	position: absolute;
+	top: 200px;
+	left: 675px;
+	animation: p3 2.7s linear infinite;
+}
+@keyframes p3{
+	0%{
+		transform: translate(0px,0px);
+	}
+	100%{
+		transform: translate(0px,-100px);
+	}
+}
+.pao3{
+	position: absolute;
+	top: 200px;
+	left: 690px;
+	animation: p4 3.1s linear infinite;
+}
+@keyframes p4{
+	0%{
+		transform: translate(0px,0px);
+	}
+	100%{
+		transform: translate(0px,-140px);
+	}
+}
+.pao4{
+	position: absolute;
+	top: 200px;
+	left: 690px;
+	animation: p5 9.1s linear infinite;
+}
+@keyframes p5{
+	0%{
+		transform: translate(0px,0px);
+	}
+	100%{
+		transform: translate(0px,-140px);
+	}
+}
+.pao5{
+	position: absolute;
+	top: 140px;
+	left: 680px;
+	animation: p6 4s linear infinite;
+}
+@keyframes p6{
+	0%{
+		transform: translate(0px,0px);
+	}
+	100%{
+		transform: translate(0px,-140px);
+	}
+}
+.pao6{
+	position: absolute;
+	top: 200px;
+	left: 700px;
+	animation: p7 6.3s linear infinite;
+}
+@keyframes p7{
+	0%{
+		transform: translate(0px,0px);
+	}
+	100%{
+		transform: translate(0px,-200px);
+	}
+}
+.pao7{
+	position: absolute;
+	top: 200px;
+	left: 720px;
+	animation: p8 8.7s linear infinite;
+}
+@keyframes p8{
+	0%{
+		transform: translate(0px,0px);
+	}
+	100%{
+		transform: translate(0px,-200px);
+	}
+}
+.pao8{
+	position: absolute;
+	top: 200px;
+	left: 620px;
+	animation: p9 7.2s linear infinite;
+}
+@keyframes p9{
+	0%{
+		transform: translate(0px,0px);
+	}
+	100%{
+		transform: translate(0px,-200px);
+	}
+}
+.pao9{
+	position: absolute;
+	top: 180px;
+	left: 660px;
+	animation: p10 5.2s linear infinite;
+}
+@keyframes p10{
+	0%{
+		transform: translate(0px,0px);
+	}
+	100%{
+		transform: translate(0px,-140px);
+	}
+}
+.pao10{
+	position: absolute;
+	top: 200px;
+	left: 684px;
+	animation: p11 7.7s linear infinite;
+}
+@keyframes p11{
+	0%{
+		transform: translate(0px,0px);
+	}
+	100%{
+		transform: translate(0px,-200px);
+	}
+}
+.pao11{
+	position: absolute;
+	top: 200px;
+	left: 666px;
+	animation: p12 5s linear infinite;
+}
+@keyframes p12{
+	0%{
+		transform: translate(0px,0px);
+	}
+	100%{
+		transform: translate(0px,-200px);
+	}
+}
+.pao12{
+	position: absolute;
+	top: 200px;
+	left: 710px;
+	animation: p13 8.8s linear infinite;
+}
+@keyframes p13{
+	0%{
+		transform: translate(0px,0px);
+	}
+	100%{
+		transform: translate(0px,-200px);
+	}
+}
+.title{
+	width: 100%;
+	height: 175px;
+	position: absolute;
+	left: 0;
+	bottom: 230px;
+	text-align: center;
+	z-index: 1;
+}
+.title span{
+	background:url('../images/logo-text.png') no-repeat right center;
+	display: inline-block;
+	width: 120px;
+	height: 45px;
+	transition: 1s;
+}
+.title>img{
+	transition: 1s;
+}
+.title p{
+	width: 420px;
+	color: #fff;
+	margin: 0 auto;
+	font-size: 12px;
+	transition: 1s;
+}
+.no>img{
+	margin-left:-1000px; 
+	transform: rotate(180deg);
+}
+.no p{
+	transform: scale(0.1);
+	opacity: 0.1;
+}
+@keyframes circle{
+	from{
+		transform: rotate(0deg);
+	}	
+	to{
+		transform: rotate(360deg);
+	}
+}
+.side li{
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid red;
+	margin-top: 30px;
+}
+.shijie{
+	position:absolute;
+	color:#fff;
+	text-align:center;
+	top: 287px;
+	left:446px;
+	animation:cici 1s linear;
+}
+@keyframes cici{
+	0%{
+    			transform:scale(0);
+    		}
+    		100%{
+    			transform:scale(1);
+    		}
+    	}
+    	.fire{
+    		position: absolute;
+    		right: 100px;
+    		top: 80px;
+    	}
+    	
+.ballon{
+	animation: ball2 3s linear infinite;
+}
+.dont{
+	transition: 3s;
+	height: 200px;
+	width: 100px;
+	position: absolute;
+	top: 115px;
+	left:620px;
+}
+.shine{
+	position: absolute;
+	top: 0px;
+	animation: shin 20s linear infinite;
+}
+@keyframes shin{
+	0%{transform: translate(0px,0px);}
+	100%{transform: translate(0px,800px);}
+}
+.dont:hover{
+	transform: translate(-100px,-100px);
+}
+@keyframes ball2{
+	0%{transform: rotate(0deg);}
+	30%{transform: rotate(-10deg);}
+	60%{transform: rotate(10deg);}
+	100%{transform: rotate(0deg);}
+}
+
+.compass{
+	position: absolute;
+	width: 130px;
+	top: 40px;
+	left:620px;
+}
+.compasspointer{
+	position: absolute;
+	width: 100px;
+	top: 55px;
+	left: 635px;
+	animation: play 10s linear infinite;
+}
+@keyframes play{
+	0%{transform: rotate(0deg);}
+	20%{transformr:rotate(270deg);}
+	50%{transform: rotate(-80deg);}
+	80%{transform:rotate(90deg);}
+	90%{transform:rotate(-50deg);}
+	100%{transform: rotate(0deg);}
+}
+.star1{
+	position: absolute;
+	top: 0;
+	left: 0px;
+	animation: s1 1.5s linear infinite;
+}
+@keyframes s1{
+	0%{transform: translate(0,0);}
+	100%{transform: translate(650px,100px);}
+}
+.star2{
+	position: absolute;
+	top: 0;
+	right: 0;
+	animation: s2 2s linear infinite;
+}
+@keyframes s2{
+	0%{transform: translate(0,0);}
+	100%{transform: translate(-600px,100px);}
+}
+.star3{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	animation: s3 4s linear infinite;
+}
+@keyframes s3{
+	0%{transform: translate(0,0);}
+	100%{transform: translate(650px,-350px);}
+}
+.star4{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	animation: s4 5s linear infinite;
+}
+@keyframes s4{
+	0%{transform: translate(0,0);}
+	100%{transform: translate(-600px,-350px);}
+}
+.beike{
+	position: absolute;
+	width: 115px;
+	top: 70px;
+	left: 635px;
+}
+.pic02{
+	position: absolute;
+	top: 100px;
+	left: 625px;
+	width: 100px;
+	animation: picc 10s linear infinite;
+}
+@keyframes picc{
+	0%{transform: scale(1);}
+	25%{transform: scale(1.5);}
+	50%{transform: scale(1.8);}
+	75%{transform: scale(2);}
+	100%{transform: scale(2.5);}
+
+	}
+	.air{
+		width: 100px;
+		position: absolute;
+		top: 130px;
+		left: 650px;
+		animation: airb 4s linear infinite;
+	}
+	@keyframes airb{
+		0%{transform: translate(0px,0px);}
+		50%{transform: translate(0px,-100px);}
+		100%{transform: translate(0px,0px);}
+	}
+	.pic01{
+	position: absolute;
+	width: 50px;
+	right: 100px;
+	bottom: 200px;
+	animation: picd 2s linear infinite;
+	}
+	.pic03{
+	position: absolute;
+	width: 50px;
+	right: 200px;
+	bottom: 100px;
+	animation: picd 6s linear infinite;
+	}
+	@keyframes picd{
+		0%{transform: translate(0px,0px);}
+		50%{ transform: translate(0px,-10px); }
+		100%{transform: translate(0px,0px);}
+	}
+	.hole{
+		position: absolute;
+		top: 50px;
+		left: 600px;
+		width: 200px;
+		animation: circle 10s linear infinite;
+	}
+	.light{
+		position: absolute;
+		top: 50px;
+		left: 600px;
+		width: 200px;
+		animation: circle 10s linear infinite;
+	}
+
+.screen1{
+	background:url(../images/bg01.jpg);
+	background-size: 100% 100%;
+	position: relative;
+}
+.screen2{
+	background:url(../images/bg02.jpg);
+	background-size: 100% 100%;
+	position: relative;
+}
+.screen3{
+	background:url(../images/bg03.jpg);
+	background-size: 100% 100%;
+	position: relative;
+}
+.screen4{
+	background:url(../images/bg04.jpg);
+	background-size: 100% 100%;
+	position: relative;
+}
+.screen5{
+	background:url(../images/bg05.jpg);
+	background-size: 100% 100%;
+	position: relative;
+}
+.screen6{
+	background:url(../images/bg06.jpg);
+	background-size: 100% 100%;
+	position: relative;
+}
+.screen7{
+	background:url(../images/bg07.jpg);
+	background-size: 100% 100%;
+	position: relative;
+}

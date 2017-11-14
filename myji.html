@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-1.11.1.js"></script>
+        <script>
+        		$(function(){
+			var a=0;
+            var timer;
+            function aa(){
+                clearInterval(timer)
+                timer=setInterval(function(){
+                    a=a+1
+                    if(a>3){
+                        a=0;
+                        $('.lunbo').children('ul').css('left','0');
+                        a=1;
+                    }
+                    $('.lunbo').children('ul').css('left', -780*a+'px');
+                },1000)
+            }
+            aa()
+            $('.lunbo').hover(function() {
+                clearInterval(timer);
+            }, function() {
+                aa();
+            });
+			$('.lunbol').click(function(event) {
+				a=a+1
+				if(a>3){
+					a=0	
+				}
+				$('.lunbo').children('ul').css('left', -780*a+'px');
+			});
+			$('.lunbor').click(function(event) {
+				a=a-1
+				if(a<0)
+				{
+					a=3
+				}
+				$('.lunbo').children('ul').css('left', -780*a+'px');
+			});
+		})
+        </script>
+    </head>
+    <body style="background: #eee;">
+    <div class="nav">
+    		<div class="container">
+    			<a href="#" class="logo">
+    				<img src="images/logo11.png" alt="">
+    			</a>
+                <ul class="nav-side">
+                    <li class="nav-item">
+                        <a href="#" class="link" target="_blank">建议反馈</a>
+                    </li>
+                </ul>
+                <ul id="nave">
+                    <li><a href="tequan.html">兑换特权</a></li>
+                    <li class="i1"><a href="myji.html">我的积分</a></li>
+                    <li><a href="rule.html">积分规则</a></li>
+                </ul>
+    		</div>
+    	</div>
+    	<div class="bod">
+    		<div class="pk">
+    			<div class="qiandao">
+    				<div class="oranger">
+    					<p>登录签到</p>
+    					</div>
+    					<h6>已连续签到<span>0</span>天</h6>
+    			</div>
+    			<div class="lunbo">
+    			<ul>
+    				<li><img src="images/banner01.png" alt=""></li>
+    				<li><img src="images/banner02.png" alt=""></li>
+    				<li><img src="images/banner03.jpg" alt=""></li>
+    				<li><img src="images/banner04.jpg" alt=""></li>
+    			</ul>
+    				<div class="lunbol"></div>
+    				<div class="lunbor"></div>
+    			</div>
+    			</div>
+    			<div class="bluid">
+    				
+    				<div><div class="baishi"></div><p>昨日获得积分：</p>
+    				<div class="numyin">
+    					<p>14</p>
+    				</div>
+    				</div>
+    				<div class="time">
+    					<img src="images/circle.png" alt="">
+    					<h1>0</h1><p>分</p>
+    					<span>5分/小时<br>昨日登录增长</span>
+    				</div>
+    				<div class="time">
+    					<img src="images/circle.png" alt="">
+    					<h1>0</h1><p>分</p>
+    					<span>3分/小时<br>昨日搜索增长</span>
+    				</div>
+    				<div class="time">
+    					<img src="images/circle.png" alt="">
+    					<h1>0</h1><p>分</p>
+    					<span>1分/小时<br>昨日网页访问增长</span>
+    				</div>
+    			</div>
+    			<div class="bluid">
+    				<div><div class="tiaoxingma"></div><p>近10天获得积分详情：</p>
+    				<div class="zaixian">
+    					<ul>
+    						<li class="lanse">在线</li>
+    						<li>搜索</li>
+    						<li>网页访问</li>
+    					</ul>
+    				</div>
+    				</div>
+    				<div class="rongliang">
+    					<hr size="1px" width="700px" #999>
+    					<span id="marginss">11月14日</span>
+    					<span>15日</span>
+    					<span>16日</span>
+    					<span>17日</span>
+    					<span>18日</span>
+    					<span>19日</span>
+    					<span>20日</span>
+    					<span>21日</span>
+    					<span>22日</span>
+    					<span>23日</span>
+    				</div>
+    			</div>
+    			</div>
+    
+    </body>
+</html>
